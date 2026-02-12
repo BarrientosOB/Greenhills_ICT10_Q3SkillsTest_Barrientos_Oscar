@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Skills Test: Account Creation</title>
+
+    <style>
+
+        div{
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 50;
+            color: gray
+        }
+
+
+        output {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 50;
+            color: gray
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+
+        }
+    </style>
+
+
+
+<head>
+<body>
+    <h1>Account Creation</h1>
+    <div class="container">
+        <form>
+            <label for="name">Enter your username</label><br>
+            
+            <input type="text" id="input1" placeholder="Username"><br>
+            <label for="pass">Enter your password</label><br>
+           
+            <input type="text" id="input2" placeholder="Password"><br><br>
+            <input type="button" value="Create Account" py-click="create_account">
+
+
+        </form>
+
+    </div>
+
+    <div id="output"></div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
